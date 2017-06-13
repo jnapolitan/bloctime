@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html ng-app="bloctime">
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Bloctime</title>
+    <link rel="stylesheet" href="/styles/main.css">
+</head>
+
+<body>
+    <ui-view></ui-view>
+
+    <!-- Angular -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+
+    <!-- AngularUI Router -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.min.js"></script>
+
+    <!-- FireBase -->
+    <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
+    <!-- AngularFire -->
+    <script src="https://cdn.firebase.com/libs/angularfire/2.3.0/angularfire.min.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyD1icpgic2vq85eG4pFzczX7wiRkTnJwT4",
+            authDomain: "bloctime-4f1f4.firebaseapp.com",
+            databaseURL: "https://bloctime-4f1f4.firebaseio.com",
+            projectId: "bloctime-4f1f4",
+            storageBucket: "bloctime-4f1f4.appspot.com",
+            messagingSenderId: "1079870749619"
+        };
+        firebase.initializeApp(config);
+
+    </script>
+
+    <!-- Application Files -->
+    <script src="/scripts/app.js"></script>
+</body>
+
+</html>
